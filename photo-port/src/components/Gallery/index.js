@@ -7,26 +7,27 @@ import photo3 from "../../assets/small/commercial/Screenshot 2022-11-10 180353.p
 
 function Gallery(props) {
   const currentCategory = {
-    name: "commercial",
-    description:
-      "Photos of grocery stores, food trucks, and other commercial projects",
+    name: "Gallery",
+     
   };
   return (
     <section>
       <h1>{capitalizeFirstLetter}</h1>
       <p></p>
       <div className="flex-row">
+      <a href="https://maxbransontaylor.github.io/genre-buddy/">GenreBuddy</a>
           <img
             src={photo}
             alt="Commercial Example"
             className="img-thumbnail mx-1"
-             href="https://maxbransontaylor.github.io/genre-buddy/"
           />
+        <a href="https://lonely-gamer-hours.herokuapp.com/home">Vinder</a>
             <img
             src={photo2}
             alt="Commercial Example"
             className="img-thumbnail mx-1"
           />
+          <a href="https://green-up-heroku.herokuapp.com/">Green-Up</a>
             <img
             src={photo3}
             alt="Commercial Example"

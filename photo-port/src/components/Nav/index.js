@@ -3,7 +3,7 @@ import React from 'react';
 function Nav() {
     const categories = [
         {
-          name: "My Work",
+          name: "",
           description:
             "Photos of grocery stores, food trucks, and other commercial projects",
         },
@@ -14,11 +14,11 @@ function Nav() {
       }
   return (
     <header>
-         <h2>
+         <h1>
     <a href="/">
       <span role="img" aria-label="Desktop PC">🖥️</span> Sam Rebilas
     </a>
-  </h2>
+  </h1>
   <nav>
     <ul className="flex-row">
       <li className="mx-2">
@@ -27,7 +27,15 @@ function Nav() {
         </a>
       </li>
       <li>
-        <span>Contact Me</span>
+        <a href="#Gallery">
+          My Work
+          </a>
+      </li>
+      <li>
+      <a href="#contact">
+          Contact Me
+        </a>
+       
       </li>
       {categories.map((category) => (
         <li
